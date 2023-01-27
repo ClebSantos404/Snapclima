@@ -98,3 +98,41 @@ body {
     font-weight: 500;
     margin-top: 10px;
 }
+
+/* bottom container */
+
+.bottom-container {
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+}
+
+.temperature-details {
+    display: flex;
+    margin-top: 30px;
+}
+
+.temperature-details__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #a2a2be;
+}
+
+.temperature-details__item:last-child {
+    border: none;
+}
+
+.temperature-details__label {
+    color: #a2a2be;
+}
+
+.temperature-details__value, .sunset-sunrise__value {
+    font-weight: 500;
+    margin-top: 7px;
+}
