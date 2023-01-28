@@ -59,7 +59,7 @@ function displayWeather(data) {
         sys: { sunrise, sunset },
      } = data
 
-     currentDate.textContent = dt;
+     currentDate.textContent = formatDate(dt);
      cityName.textContent = name;
      weatherIcon.src = `/assets/${icon}.svg`
      weatherDescription.textContent = description;
@@ -67,6 +67,19 @@ function displayWeather(data) {
      windSpeed.textContent = speed;
      feelsLikeTemperature.textContent = feels_like;
      currentHumidity.textContent = humidity;
-     sunriseTime.textContent = sunrise;
-     sunsetTime.textContent = sunset;
+     sunriseTime.textContent = formatTime(sunrise);
+     sunsetTime.textContent = formatTime(sunset);
+}
+
+function formatDate(epochTime) {
+    let date = new Date(epochTime * 1000)
+    let formattedDate = date.toLocaleDateString('pt-BR', { month: "long", day: "numeric"})
+    return `Hoje, ${formattedDate}`
+}
+
+function formatTime(epochTime) {
+    let date = new Date(epochTime * 1000)
+    let hours = date.getHours()
+    let minutes = date.getMinutes()
+    return `${hours}:${minutes}`
 }
