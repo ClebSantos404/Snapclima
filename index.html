@@ -14,22 +14,24 @@
     <header class="header">
 
       <div class="header__city-search-bar">
-        <input class="header__input" type="text" placeholder="Temperatura de qual cidade?" />
-        <button class="header__button">
+        <input id="city-search-input" class="header__input" type="text" placeholder="Temperatura de qual cidade?" />
+        <button id="city-search-button" class="header__button">
+
           <img class="header__button-icon" src="assets/search-icon.svg" alt="Icone de lupa de pesquisa">
+
         </button>
       </div>
 
-      <div class="header__current-date">...</div>
-      <div class="header__city-name">...</div>
+      <div id="current-date" class="header__current-date">...</div>
+      <div id="city-name" class="header__city-name">...</div>
 
     </header>
 
     <section class="current-temperature">
-      <img class="current-temperature__weather-icon" arian-hidden="true" src="assets/loading-icon.svg" alt="Icon que ilustra a temperatura atual">
-      <div class="current-temperature__description">...</div>
+      <img id="weather-icon" class="current-temperature__weather-icon" arian-hidden="true" src="assets/loading-icon.svg" alt="Icon que ilustra a temperatura atual">
+      <div id="weather-description" class="current-temperature__description">...</div>
       <div class="current-temperature__info-label">...</div>
-      <div class="current-temperature__current-temperature">...</div>
+      <div id="current-temperature" class="current-temperature__current-temperature">...</div>
     </section>
 
     <div class="bottom-container">
@@ -37,17 +39,17 @@
 
         <div class="temperature-details__item">
           <div class="temperature-details__label">vento</div>
-          <div class="temperature-details__value">...</div>
+          <div id="wind-speed" class="temperature-details__value">...</div>
         </div>
 
         <div class="temperature-details__item">
           <div class="temperature-details__label">sensação</div>
-          <div class="temperature-details__value">...</div>
+          <div id="feels-like-temperature" class="temperature-details__value">...</div>
         </div>
 
         <div class="temperature-details__item">
           <div class="temperature-details__label">Umidade</div>
-          <div class="temperature-details__value">...</div>
+          <div id="current-humidity" class="temperature-details__value">...</div>
         </div>
 
       </section>
@@ -56,12 +58,12 @@
 
         <div class="sunset-sunrise__item">
           <img class="sunset-sunrise__icon" src="assets/sunrise.svg" alt="Nascer do sol">
-          <div class="sunset-sunrise__value">...</div>
+          <div id="sunrise-time" class="sunset-sunrise__value">...</div>
         </div>
 
         <div class="sunset-sunrise__item">
           <img class="sunset-sunrise__icon" src="assets/sunset.svg" alt="Pôr do sol">
-          <div class="sunset-sunrise__value">...</div>
+          <div id="sunset-time" class="sunset-sunrise__value">...</div>
         </div>
 
       </section>
