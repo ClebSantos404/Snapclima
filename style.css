@@ -74,6 +74,10 @@ body {
 
 /* current temperature */
 
+.current-temperature::first-letter {
+    text-transform: uppercase;
+}
+
 .current-temperature {
     display: flex;
     flex-direction: column;
